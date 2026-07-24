@@ -63,6 +63,9 @@ Memory Usage:
 Disk Usage:
 ...
 ```
+## Screenshot
+
+![Linux System Monitor](screenshots/output.png)
 
 ## Future Improvements
 
