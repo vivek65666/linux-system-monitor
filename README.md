@@ -69,8 +69,9 @@ Disk Usage:
 
 ## Future Improvements
 
+- Export reports to HTML
 - Email alerts
-- CPU usage threshold notifications
-- Log file generation
-- Cron job automation
-- Colored terminal output
+- Slack notifications
+- Docker support
+- System health dashboard
+- Scheduled monitoring with Cron
