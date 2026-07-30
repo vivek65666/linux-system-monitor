@@ -195,7 +195,6 @@ Starting System Monitor... Press Ctrl+C to stop.
 
 ## Screenshot
 
-> Add your terminal screenshot to:
 
 ```
 screenshots/output.png
@@ -205,6 +204,9 @@ Then it will appear below.
 
 ![Linux System Monitor](screenshots/output.png)
 
+## Screenshot
+
+![Python Real-Time Monitor Output](screenshots/output%20cpu.png)
 ---
 
 ## How It Works
