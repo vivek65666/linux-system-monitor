@@ -192,22 +192,15 @@ Starting System Monitor... Press Ctrl+C to stop.
 ⚠️  HIGH MEMORY USAGE ALERT: 81.8% exceeds 80.0%
 [CPU: 22.8%] | [Memory: 81.4%] | [Disk: 38.9%]
 ⚠️  HIGH MEMORY USAGE ALERT: 81.4% exceeds 80.0%
-
-## Screenshot
-
-
-```
-screenshots/output.png
-```
-
-Then it will appear below.
-
-![Linux System Monitor](screenshots/output.png)
-
-## Screenshot
-
-![Python Real-Time Monitor Output](screenshots/output%20cpu.png)
 ---
+---
+## Screenshots
+
+### 1. Bash System Health Report (`monitor.sh`)
+![Bash Monitor Output](screenshots/output-bash.png)
+
+### 2. Python Real-Time Monitor (`monitor.py`)
+![Python Monitor Output](screenshots/output-python.png)
 
 ## How It Works
 
