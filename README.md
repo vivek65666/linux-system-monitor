@@ -184,8 +184,9 @@ System Report Completed Successfully.
 
 ---
 
-Sample Python Output & Alerts
-Plaintext
+## Sample Python Output & Alerts
+
+```text
 Starting System Monitor... Press Ctrl+C to stop.
 [CPU: 22.9%] | [Memory: 81.8%] | [Disk: 38.9%]
 ⚠️  HIGH MEMORY USAGE ALERT: 81.8% exceeds 80.0%
