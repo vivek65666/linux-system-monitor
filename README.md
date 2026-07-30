@@ -118,11 +118,14 @@ chmod +x monitor.sh
 
 ## Usage
 
-1. Run the Bash Health Report (monitor.sh)
-Make the script executable:
+## Usage
 
-Bash
+### 1. Run the Bash Health Report (`monitor.sh`)
+
+Make the script executable:
+```bash
 chmod +x monitor.sh
+
 Run the script:
 
 Bash
