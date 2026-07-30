@@ -63,7 +63,6 @@ def check_system_stats():
     except KeyboardInterrupt:
         print("\nSystem Monitor stopped by user.")
         logging.info("System Monitor stopped by user.")
-
-
 if __name__ == "__main__":
     check_system_stats()
+    
