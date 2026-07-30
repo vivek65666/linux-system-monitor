@@ -197,9 +197,11 @@ Starting System Monitor... Press Ctrl+C to stop.
 ## Screenshots
 
 ### 1. Bash System Health Report (`monitor.sh`)
+
 ![Bash Monitor Output](screenshots/output-bash.png)
 
 ### 2. Python Real-Time Monitor (`monitor.py`)
+
 ![Python Monitor Output](screenshots/output-python.png)
 
 ## How It Works
