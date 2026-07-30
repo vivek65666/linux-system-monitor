@@ -1,32 +1,37 @@
-# Linux System Monitor
+# Linux & System Monitor
 
 ![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?logo=linux&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-Scripting-4EAA25?logo=gnu-bash&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
-A Bash-based Linux system monitoring tool that provides a quick overview of your system's health by displaying CPU information, memory usage, disk usage, uptime, running processes, logged-in users, and network details.
+A dual-tool system monitoring suite featuring a **Bash-based report generator** and a **Python real-time monitoring tool** that tracks CPU, memory, and disk usage with automated threshold alerts and activity logging.
 
 ---
 
 ## Features
 
+### 🖥️ Bash System Health Report (`monitor.sh`)
 - Displays system hostname
 - Shows current date and time
 - Displays system uptime
 - Shows CPU information
 - Displays memory usage
 - Displays disk usage
-- Lists top CPU-consuming processes
-- Lists top memory-consuming processes
-- Shows logged-in users
-- Displays system IP address
-- Generates a quick system health report
+- Lists top CPU and memory-consuming processes
+- Shows logged-in users and system IP address
+
+### ⚡ Python Real-Time Monitor (`monitor.py`)
+- Continuous live tracking of CPU, memory, and disk percentages
+- Custom threshold limit checks (triggers warnings if limits are exceeded)
+- Automated activity and alert logging to `system_monitor.log`
 
 ---
 
 ## Technologies Used
 
+- Python (`psutil`, `logging`, `time`)
 - Bash
 - Linux
 - Git
@@ -36,15 +41,13 @@ A Bash-based Linux system monitoring tool that provides a quick overview of your
 
 ## Skills Demonstrated
 
-- Linux Administration
+- System Administration & Automation
+- Python Scripting & Error Handling
 - Bash Scripting
-- System Monitoring
-- Process Monitoring
-- Memory Monitoring
-- Disk Usage Analysis
-- Network Information Retrieval
+- Real-Time System Monitoring & Alerting
+- Log Management
 - Git Version Control
-- GitHub Documentation
+- Project Documentation
 
 ---
 
@@ -53,17 +56,19 @@ A Bash-based Linux system monitoring tool that provides a quick overview of your
 ```
 linux-system-monitor/
 │
-├── monitor.sh
+├── monitor.sh          # Bash health report script
+├── monitor.py          # Python real-time monitor & alerter
+├── system_monitor.log  # Generated system logs
 ├── README.md
 ├── LICENSE
 ├── .gitignore
 └── screenshots/
-    └── output.png
+└── output.png
 ```
 
 ---
 
-## Linux Commands Used
+## Linux Commands Used (Bash Script)
 
 | Command | Purpose |
 |----------|----------|
@@ -81,11 +86,11 @@ linux-system-monitor/
 
 ## Prerequisites
 
-Before running the script, ensure you have:
-
-- Linux (Ubuntu, Debian, Fedora, CentOS, etc.)
+Before running the scripts, ensure you have:
+- Linux (Ubuntu, Debian, Fedora, CentOS, etc.) or WSL
 - Bash Shell
-- Git (optional for cloning the repository)
+- Python 3.x with `psutil` installed
+- Git
 
 ---
 
@@ -94,7 +99,7 @@ Before running the script, ensure you have:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/vivek65666/linux-system-monitor.git
+git clone [https://github.com/vivek65666/linux-system-monitor.git](https://github.com/vivek65666/linux-system-monitor.git)
 ```
 
 ### Navigate to the Project Directory
@@ -113,13 +118,25 @@ chmod +x monitor.sh
 
 ## Usage
 
+Usage
+1. Run the Bash Health Report (monitor.sh)
+Make the script executable:
+
+Bash
+chmod +x monitor.sh
 Run the script:
 
-```bash
+Bash
 ./monitor.sh
-```
+2. Run the Python Real-Time Monitor (monitor.py)
+Install dependencies:
 
----
+Bash
+pip install psutil
+Run the real-time monitor:
+
+Bash
+python monitor.py
 
 ## Sample Output
 
@@ -164,6 +181,14 @@ System Report Completed Successfully.
 ```
 
 ---
+
+Sample Python Output & Alerts
+Plaintext
+Starting System Monitor... Press Ctrl+C to stop.
+[CPU: 22.9%] | [Memory: 81.8%] | [Disk: 38.9%]
+⚠️  HIGH MEMORY USAGE ALERT: 81.8% exceeds 80.0%
+[CPU: 22.8%] | [Memory: 81.4%] | [Disk: 38.9%]
+⚠️  HIGH MEMORY USAGE ALERT: 81.4% exceeds 80.0%
 
 ## Screenshot
 
